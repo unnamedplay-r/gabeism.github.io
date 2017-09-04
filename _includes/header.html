@@ -1,0 +1,42 @@
+<header class="relative z-3 cf mw8 center pa4" role="banner">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+
+    <nav class="fl pt2 pr3" role="navigation">
+        <div id="menuToggle">
+            <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+                <a class="f2 b black link ttu" href="/"><li>{{ site.title | escape }}</li></a>
+                <a href="/work" class="black link ttu underline-hover"><li>Work</li></a>
+                <a href="/about" class="black link ttu underline-hover"><li>About</li></a>
+                <a class="black link ttu underline-hover" href="https://medium.com/@gabrielisacookie" target="_blank" ><li>Blog</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <a class="fl f2 b black link ttu dn db-ns" href="/">{{ site.title | escape }}</a>
+    
+    {% if page_paths %}
+        <div class="cf dn db-ns">
+            <a class="fr link ttu ml3 underline-hover black" href="https://medium.com/@gabrielisacookie" target="_blank" >Blog</a>
+            {% for path in page_paths %} 
+                {% assign my_page = site.pages | where: "path", path | first %} 
+                {% if my_page.title %}
+                    <a class="fr link ttu ml3 underline-hover black" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {% endif %}
+            {% endfor %}
+            
+        </div>
+    {% endif %}
+
+
+</header>

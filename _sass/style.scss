@@ -1,0 +1,231 @@
+@charset "utf-8";
+$base-font: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+            Roboto, Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+.force-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sans-serif { font-family: $base-font; }
+.f-4r { font-size: 4rem; }
+
+// grid
+.dg { display: grid; }
+.colz { grid-template-columns: 1fr 1fr; }
+
+// media
+@media screen and (min-width:60em) {
+    .dg-l { display: grid; }
+    .f-4r-l { font-size: 4rem; }
+}
+
+/*
+ Header stylings
+ -----------------------------------------*/ 
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ */
+ 
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+ 
+ /*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #000;
+   border-radius: 0px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+}
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   opacity: 1;
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 1000px;
+   height: 1000px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #fff;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's fade it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: scale(1.0, 1.0);
+   opacity: 1;
+ }
+
+@media screen and (min-width:30em){
+    nav {
+        display: none;
+    }
+}
+
+/*
+ Home page stylings
+ -----------------------------------------*/ 
+ 
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+}
+
+.tv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: auto;
+
+    transition: opacity .5s;
+}
+
+@media screen and (min-width:60em) {
+    .txt-l {
+        left: 64.5%;
+        width: 565px;
+    }
+}
+
+/*
+ Work page stylings
+ -----------------------------------------*/ 
+
+ .project-img {
+    width: 300px;
+    height: 275px;
+}
+
+@media screen and (min-width:60em) {
+    // Work Page
+    .project-img {
+        width: 400px;
+        height: 475px;
+    }
+}
