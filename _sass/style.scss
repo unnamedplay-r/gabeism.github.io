@@ -128,11 +128,16 @@ $base-font: -apple-system, BlinkMacSystemFont, "Segoe UI",
   */
 #menu {
     position: absolute;
-    width: 1000px;
-    height: 105vh;
-    margin: -100px 0 0 -50px;
+    width: calc(100vw + 18px);
+    min-width: calc(100vw);
+    height: 90vh;
+    min-height: 430px;
+    // margin: -100px 0 0 -50px;
+    margin-bottom: 0px;
     padding: 50px;
     padding-top: 125px;
+    top:-60px;
+    left:-50px;
 
     // background: #fff;
     list-style-type: none;
