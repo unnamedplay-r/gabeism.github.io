@@ -126,31 +126,35 @@ $base-font: -apple-system, BlinkMacSystemFont, "Segoe UI",
   * Make this absolute positioned
   * at the top left of the screen
   */
- #menu
- {
-   position: absolute;
-   width: 1000px;
-   height: 1000px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
-   
-   background: #fff;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
+#menu {
+    position: absolute;
+    width: 1000px;
+    height: 105vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    // background: #fff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+76,0+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 76%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 76%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
  
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
  
  /*
   * And let's fade it in from the left
@@ -217,7 +221,7 @@ $base-font: -apple-system, BlinkMacSystemFont, "Segoe UI",
  Work page stylings
  -----------------------------------------*/ 
 
- .project-img {
+.project-img {
     width: 300px;
     height: 275px;
 }

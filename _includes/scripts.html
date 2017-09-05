@@ -3,9 +3,7 @@
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
 
-{% comment %}
-    This ensures we're loading in the youtube page only for the homepage
-{% endcomment %}
+<!-- Load in script for homepage -->
 {% if  page.title == "GABEISM." %}
     {% include youtube.html %}
 {% endif %}
