@@ -1,4 +1,4 @@
-
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
@@ -7,3 +7,6 @@
 {% if  page.title == "GABEISM." %}
     {% include youtube.html %}
 {% endif %}
+
+<!-- Load in MathJax as needed -->
+{% include mathjax.html %}

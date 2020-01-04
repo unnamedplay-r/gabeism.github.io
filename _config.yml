@@ -26,7 +26,7 @@ github_username:  unnamedplay-r
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-dinky
+theme: minima 
 plugins:
   - jekyll-feed
 

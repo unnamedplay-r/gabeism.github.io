@@ -18,7 +18,7 @@
                 <a href="/" class="f2 b black link ttu" ><li>{{ site.title | escape }}</li></a>
                 <a href="/work" class="black link ttu underline-hover"><li>Work</li></a>
                 <a href="/about" class="black link ttu underline-hover"><li>About</li></a>
-                <a href="https://medium.com/@gabrielisacookie" class="black link ttu underline-hover"  target="_blank" ><li>Blog</li></a>
+                <a href="/blog" class="black link ttu underline-hover"><li>Blog</li></a>
             </ul>
         </div>
     </nav>
@@ -27,9 +27,8 @@
     
     {% if page_paths %}
         <div class="cf dn db-ns">
-            <a class="fr link ttu ml3 underline-hover black" href="https://medium.com/@gabrielisacookie" target="_blank" >Blog</a>
-            {% for path in page_paths %} 
-                {% assign my_page = site.pages | where: "path", path | first %} 
+            {% for path in page_paths %}
+                {% assign my_page = site.pages | where: "path", path | first %}
                 {% if my_page.title != "GABEISM." %}
                     <a class="fr link ttu ml3 underline-hover black" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {% endif %}
