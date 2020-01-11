@@ -3,7 +3,6 @@ layout: post
 title:  "Revelations After My First Graduate Math Class"
 subtitle: "A better view"
 date:   2020-01-03 19:30:00 -0400
-categories: math graduateschool
 mathjax: true
 ---
 
@@ -57,7 +56,7 @@ Finally,
 ## Find the right tutor.
 My coursework is online and that puts me in a position where I’m rarely face-to-face with my professor, it sucks. The discussion hours never aligned with my schedule, and during the few times I did interact with him, I found that I couldn’t exactly ask the questions I *needed to* nor could I get strong feedback on the homework questions that I was struggling with. It's the major gripe I have with online coursework. It also had side effects, I found myself in a compounding decline in understanding of the material given the fact that math curriculum is constantly taught from the ground up. After two weeks of feeling hopeless in Number Theory, I felt like I had no other option but to find a tutor that *could* help put the material into perspective for. I'm so grateful I did as the insights you're reading here were laboriously extracted from frank discussions with my tutors and my struggles with homework. I don't doubt that I wouldn't have learned what I know now without them. If you find yourself struggling and unable to get time with your teacher, bite the bullet and get a tutor.
 
-
-Looking back, this course has been a true adventure that I'm so grateful to have embarked on. I remember when I first started doing proofs, it seemed that I could think for the first time; a lasting feeling to this day. Problems at work suddenly became a whole lot easier to reason about, and all the programming I did felt much more expressive. I admit, there were moments during the semester that were absolute hell, but the passion and respect I've developed for the subject is something that I'll hold on for life.
+## It's worth it.
+Looking back, this course has been a true adventure that I'm so grateful to have embarked on. I remember when I first started doing proofs, it seemed that I could think for the first time; a lasting feeling to this day. Problems at work suddenly became a whole lot easier to reason about, and all the programming I did felt much more expressive. I admit, there were moments during the semester that were absolute hell, but the passion and respect I've developed for the subject is something that I'll hold onto for life.
 
 Thanks for reading.
