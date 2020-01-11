@@ -1,4 +1,6 @@
-# Running the website locally (requires internet)
+# Development Environment
+
+## Running the website locally (requires internet)
 
 Build and run it locally:
 ```shell
